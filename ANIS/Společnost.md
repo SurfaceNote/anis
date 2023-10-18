@@ -1,15 +1,12 @@
+<img src="[https://webpk.cz/favicon.svg](https://github.com/SurfaceNote/anis/assets/72889112/e798552c-ae43-4456-8e63-4633b2dcf949)" alt="Logo" align=right style="width:4rem; height:4rem;" />
 
-<div style="width:full;">
-    <img src="https://webpk.cz/favicon.svg" alt="" style="width:4rem; height:4rem;" />
-    <strong>WebPK</strong>
-</div>
 
 ## Údaje
 
 - Název: **WebPK** s.r.o.
 - Sídlo: **Skuherského 1457/32, 370 01 České Budějovice 3**
 - IČO: **17503400**
-- Počet zaměstnanců: 16
+- Počet zaměstnanců: **16**
 - Datum vzniku: **5. 9. 2022**
 - Spisová značka: **C 432671**/MSPH Městský soud v Praze
 - Předmět podnikání:
@@ -66,4 +63,5 @@
 ---
 
 ## Organizace
- 
+
+![Organizace](https://i.ibb.co/x2W3LJ2/diagram-export-10-18-2023-3-49-38-PM.png)
