@@ -1,4 +1,4 @@
-<img src="[https://webpk.cz/favicon.svg](https://github.com/SurfaceNote/anis/assets/72889112/e798552c-ae43-4456-8e63-4633b2dcf949)" alt="Logo" align=right style="width:4rem; height:4rem;" />
+<img src="https://github.com/SurfaceNote/anis/assets/72889112/e798552c-ae43-4456-8e63-4633b2dcf949" alt="Logo" align=right style="width:4rem; height:4rem;" />
 
 
 ## Údaje
