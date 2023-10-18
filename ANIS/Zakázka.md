@@ -1,0 +1,1 @@
+![Architektura](https://i.ibb.co/FD9Sm2h/architecture.png)
