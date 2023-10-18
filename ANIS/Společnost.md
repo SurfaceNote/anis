@@ -64,4 +64,24 @@
 
 ## Organizace
 
-![Organizace](https://i.ibb.co/x2W3LJ2/diagram-export-10-18-2023-3-49-38-PM.png)
+![Diagram - Organizace společnosti](https://github.com/SurfaceNote/anis/assets/72889112/95958009-a3fd-48b4-b8cb-480dac918af5)
+
+### Vedení
+
+- Petr Kolonicz **Majitel**, **Výkonný ředitel**, **Technický ředitel**, **CIO**
+
+- František Procházka **Ředitel vývoje**, **Technický manažer**, **Projektový manažer**
+- Pavel Tran **Programátor**
+- Josefína Skočdopolová **Správce operačních systémů a sítí**
+- Vlastimil Plamínek **Programátor**, **Grafický designér**, **UI/UX designér**
+- Bohuslav Tvaroh **Finanční ředitel**, **Ředitel obchodních vztahů**
+- Marika Caisová **Účetní**, **Daňová poradkyně**, **Pokladní**
+- Anna Mičanová **Personalistka**, **Advokátka**, **Referentka**
+- Ilia Pospelov **Spolumajitel**, **Provozní ředitel**, **Obchodní ředitel**
+- František Grill **CMO**, **Obchodní manažer**
+- Spytihněv Strašrybka **Marketing**, **Analytik**
+- Vilém Brok **Grafický designér**
+- Ondráš Fošum **Odborník na marketing**
+- Jaroslav Hnědý **Údržbář**, **Uklízeč**
+- Ludmila Dvořáková **CCO**, **Technická podpora**
+- Emílie Lagronová **Recepční**, **Sekretářka**, **Technická podpora**
