@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     start([Start]) --> schedule{Frekvence sběru dat}
     schedule -->|Specifikovaná frekvence| scraper[Spustit webový scraper]
@@ -7,7 +8,9 @@ flowchart TD
     delay -->|Ano| keepUpdated[Udržet databázi aktuální]
     delay -->|Ne| finish([Konec])
     keepUpdated --> finish
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> userInput[Uživatel zadává klíčové fráze]
     userInput --> manageKeywords[Uživatel spravuje klíčové fráze]
@@ -17,14 +20,18 @@ flowchart TD
     backendAnalysis -->|Žádná změna| idle['Čekání na další analýzu']
     alertTriggered --> End([Konec])
     idle --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> generateReports[Backend generuje zprávy]
     generateReports --> graphicalRepresentation[Zprávy s grafickou reprezentací]
     graphicalRepresentation --> keyDevelopmentPoints[Klíčové body vývoje v zprávách]
     keyDevelopmentPoints --> userAccess[Uživatelé získávají zprávy pro analýzu]
     userAccess --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> monitorChange[Backend sleduje hodnocení]
     monitorChange --> significantChange{Významná změna?}
@@ -34,7 +41,9 @@ flowchart TD
     significantChange -- Ne --> waitForChange
     waitForChange --> monitorChange
     sendAlert --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> useFilters[Uživatelé používají filtry]
     useFilters --> specifyCriteria[Specifikace kritérií: data, region, jazyk]
@@ -42,20 +51,26 @@ flowchart TD
     saveFilters --> backendFiltering[Backend provádí filtrování]
     backendFiltering --> presentData[Prezentace relevantních dat]
     presentData --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> analyzeSocialSignals[Backend analyzuje sociální signály]
     analyzeSocialSignals --> integrateInformation[Integrace informací do hodnocení]
     integrateInformation --> showImpact[Zobrazení vlivu sociálních signálů]
     showImpact --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> storeHistory[Backend ukládá historii změn pozic]
     storeHistory --> userDetails[Detaily o změnách v hodnocení]
     userDetails --> userAccess[Uživatel prochází historická data]
     userAccess --> analyzeDevelopment[Uživatel analyzuje vývoj]
     analyzeDevelopment --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> userRequest[Uživatel vyžádá export]
     userRequest --> setParameters[Nastavení exportních parametrů]
@@ -68,7 +83,9 @@ flowchart TD
     other --> backendProcess
     backendProcess --> provideData[Poskytnutí exportovaných dat uživateli]
     provideData --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> createGroups[Administrátoři vytvářejí/spravují skupiny]
     createGroups --> setPermissions[Nastavení úrovní oprávnění skupiny]
@@ -78,7 +95,9 @@ flowchart TD
     accessControl -->|Zakázán přístup| denyAccess[Přístup zamítnut]
     grantAccess --> End([Konec])
     denyAccess --> End
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> loginUser[Uživatel se přihlásí do účtu]
     loginUser --> manageProjects[Uživatel spravuje více projektů]
@@ -86,7 +105,9 @@ flowchart TD
     projectSeparation --> switchProjects[Backend umožňuje přechod mezi projekty]
     switchProjects --> shareData[Sdílení dat mezi projekty]
     shareData --> End([Konec])
+```
 
+```mermaid
 flowchart TD
     start([Start]) --> provideAPI[Backend poskytuje API]
     provideAPI --> standardInterface[API jako standardní rozhraní]
@@ -94,3 +115,4 @@ flowchart TD
     externalIntegration --> useData[Externí aplikace využívají data]
     useData --> performAnalysis[Provádění dalších analýz]
     performAnalysis --> End([Konec])
+```
