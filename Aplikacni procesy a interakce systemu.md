@@ -1,3 +1,93 @@
+### Aplikační Procesy
+
+#### 1. **Sběr Dat**
+- **Popis:**
+  - Backend pravidelně provádí web scraping výsledků vyhledávání Google podle zadaných klíčových frází.
+- **Komunikace:**
+  - Backend komunikuje s webovým scraperem, který získává data z Google Search.
+- **Interní Komunikace:**
+  - Webový scraper posílá sesbírané informace backendu.
+
+#### 2. **Ukládání Dat**
+- **Popis:**
+  - Sesbírané informace (pozice webů, odkazy, krátké popisy) jsou ukládány v databázi.
+- **Komunikace:**
+  - Backend interaguje s databází pro ukládání a získávání dat.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro persistenci dat.
+
+#### 3. **Uživatelské Rozhraní**
+- **Popis:**
+  - Frontend umožňuje uživatelům zadávat a spravovat klíčové fráze pro sledování.
+- **Komunikace:**
+  - Frontend, který zajišťuje interakci s uživateli.
+- **Interní Komunikace:**
+  - Frontend komunikuje s backendem pro získání a zobrazení dat.
+
+#### 4. **Analýza**
+- **Popis:**
+  - Uživatelé mohou vidět, jak jsou jejich weby hodnoceny v Google podle zadaných klíčových slov.
+- **Komunikace:**
+  - Backend zpracovává data a poskytuje je frontendu pro zobrazení.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro získávání aktuálních dat.
+
+#### 5. **Zprávy**
+- **Popis:**
+  - Možnost generování zpráv o pozicích webů v čase pro analýzu trendů.
+- **Komunikace:**
+  - Backend generuje a poskytuje zprávy frontendu.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro historická data.
+
+#### 6. **Filtrace Výsledků**
+- **Popis:**
+  - Možnost filtrovat výsledky vyhledávání podle data, regionu a jazyka.
+- **Komunikace:**
+  - Backend zajišťuje filtrování dat na základě uživatelských preferencí.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro filtrování dat.
+
+#### 7. **Upozornění**
+- **Popis:**
+  - Automatické zasílání upozornění uživatelům při významných změnách v hodnocení jejich webů.
+- **Komunikace:**
+  - Backend sleduje změny a posílá upozornění uživatelům.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro sledování změn.
+
+#### 8. **Integrace se Sociálními Sítěmi**
+- **Popis:**
+  - Možnost analyzovat a zobrazovat údaje o sociálních signálech (např. zmínky na sociálních sítích) pro klíčová slova.
+- **Komunikace:**
+  - Backend získává údaje o sociálních signálech a integruje je do analýzy.
+- **Interní Komunikace:**
+  - Backend komunikuje s externími API sociálních sítí.
+
+#### 9. **Historie Změn**
+- **Popis:**
+  - Sledování a ukládání historie změn pozic webů ve výsledcích vyhledávání.
+- **Komunikace:**
+  - Backend ukládá historická data do databáze.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro ukládání historických dat.
+
+#### 10. **Export Dat**
+- **Popis:**
+  - Možnost exportovat data a zprávy v různých formátech (např. CSV, PDF).
+- **Komunikace:**
+  - Backend poskytuje funkcionalitu pro export dat.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro získání dat pro export.
+
+#### 11. **Uživatelské Skupiny**
+- **Popis:**
+  - Možnost vytváření skupin uživatelů s různými úrovněmi přístupu.
+- **Komunikace:**
+  - Backend umožňuje správu uživatelských skupin a jejich oprávnění.
+- **Interní Komunikace:**
+  - Backend komunikuje s databází pro správu uživatelských skupin.
+
 ### Workflows v Aplikaci
 
 #### 1. **Sběr a Aktualizace Dat z Google**\
@@ -85,4 +175,4 @@
 - **Popis:**\
   - **Workflow:**\
     1. Frontend je navržen tak, aby byl přizpůsobený pro použití na různých zařízeních (počítače, tablety, smartphony).\
-    2. Uživatelé mají konzistentní a uživatelsky příjemné prost
+    2. Uživatelé mají konzistentní a uživatelsky příjemné prostředí
