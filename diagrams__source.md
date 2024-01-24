@@ -111,7 +111,7 @@ flowchart TD
 flowchart TD
     start([Start]) --> provideAPI[Backend poskytuje API]
     provideAPI --> standardInterface[API jako standardní rozhraní]
-    standardInterface --> externalIntegration{Integrace s externími systémy/aplikacemi}
+    standardInterface --> externalIntegration(Integrace s externími systémy/aplikacemi)
     externalIntegration --> useData[Externí aplikace využívají data]
     useData --> performAnalysis[Provádění dalších analýz]
     performAnalysis --> End([Konec])
