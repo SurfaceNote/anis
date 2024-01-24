@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    start([Start]) --> schedule{Frekvence sběru dat}
+    start([Start]) --> schedule(Frekvence sběru dat)
     schedule -->|Specifikovaná frekvence| scraper[Spustit webový scraper]
     scraper --> collectData[Sběr dat z Google Search]
     collectData --> updateDB[Aktualizace databáze]
