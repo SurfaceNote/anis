@@ -28,16 +28,20 @@ flowchart TD
 flowchart TD
     start([Start]) --> monitorChange[Backend sleduje hodnocení]
     monitorChange --> significantChange{Významná změna?}
-    
     significantChange -- Ano --> userDefinedCriteria{Splněny podmínky uživatele?}
     userDefinedCriteria -- Ano --> sendAlert[Odeslat upozornění uživatelům]
     userDefinedCriteria -- Ne --> waitForChange[Čekat na další změny]
-    
     significantChange -- Ne --> waitForChange
-    
     waitForChange --> monitorChange
-    
     sendAlert --> End([Konec])
+
+flowchart TD
+    start([Start]) --> useFilters[Uživatelé používají filtry]
+    useFilters --> specifyCriteria[Specifikace kritérií: data, region, jazyk]
+    specifyCriteria --> saveFilters[Uložení nastavených filtrů]
+    saveFilters --> backendFiltering[Backend provádí filtrování]
+    backendFiltering --> presentData[Prezentace relevantních dat]
+    presentData --> End([Konec])
 
 flowchart TD
     start([Start]) --> analyzeSocialSignals[Backend analyzuje sociální signály]
@@ -74,3 +78,19 @@ flowchart TD
     accessControl -->|Zakázán přístup| denyAccess[Přístup zamítnut]
     grantAccess --> End([Konec])
     denyAccess --> End
+
+flowchart TD
+    start([Start]) --> loginUser[Uživatel se přihlásí do účtu]
+    loginUser --> manageProjects[Uživatel spravuje více projektů]
+    manageProjects --> projectSeparation[Každý projekt má vlastní data a konfiguraci]
+    projectSeparation --> switchProjects[Backend umožňuje přechod mezi projekty]
+    switchProjects --> shareData[Sdílení dat mezi projekty]
+    shareData --> End([Konec])
+
+flowchart TD
+    start([Start]) --> provideAPI[Backend poskytuje API]
+    provideAPI --> standardInterface[API jako standardní rozhraní]
+    standardInterface --> externalIntegration{Integrace s externími systémy/aplikacemi}
+    externalIntegration --> useData[Externí aplikace využívají data]
+    useData --> performAnalysis[Provádění dalších analýz]
+    performAnalysis --> End([Konec])
